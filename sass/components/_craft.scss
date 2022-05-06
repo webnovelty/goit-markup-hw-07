@@ -1,0 +1,43 @@
+.craft {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+.craft__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $menu-color;
+}
+.craft__list {
+  display: flex;
+  margin-top: 50px;
+}
+.craft__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.craft__overlay {
+  position: relative;
+}
+.craft__content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
