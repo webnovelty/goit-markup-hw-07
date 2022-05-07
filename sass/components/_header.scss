@@ -16,21 +16,19 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.header__mainmenu {
+.site-nav {
   display: flex;
   margin-left: 93px;
 }
-.header__item {
+.site-nav__item,
+.contact__item {
   margin-right: 50px;
   &:last-child {
     margin-right: 0;
   }
 }
-.header__link-active {
+.site-nav__link--active {
   position: relative;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: $lg-color;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -48,7 +46,7 @@
     padding-bottom: 0;
   }
 }
-.header__link {
+.site-nav__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -59,12 +57,12 @@
     color: $lg-color;
   }
 }
-.header__contact {
+.contact {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.header__contact-link {
+.contact__link {
   display: flex;
   font-weight: 500;
   color: $content-color;
@@ -76,7 +74,7 @@
     color: $lg-color;
   }
 }
-.header_icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }

@@ -11,11 +11,11 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms, visibility 300ms;
-  & .backdrop__modal {
+  & .modal {
     transform: translate(-50%, -50%) scale(1.1);
   }
 }
-.backdrop__modal {
+.modal {
   position: absolute;
   width: 528px;
   height: 581px;
@@ -30,7 +30,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__exit-button {
+.modal__exit-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -44,10 +44,10 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
-    fill: var(--lg-color);
+    fill: $lg-color;
   }
 }
-.backdrop__modal-form {
+.modal__form {
   padding: 40px;
   & input,
   & textarea {
@@ -63,7 +63,7 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-.backdrop__modal-heading {
+.modal__heading {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -72,7 +72,7 @@
   letter-spacing: 0.03em;
   color: #212121;
 }
-.backdrop__modal-label {
+.modal__label {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -96,17 +96,17 @@
     border: 1px solid #2196f3;
   }
 }
-.backdrop__modal-label-content {
+.modal__label-content {
   display: block;
   margin-bottom: 4px;
 }
-.backdrop__modal-string {
+.modal__string {
   position: relative;
-  &:focus-within > .backdrop__modal-icon {
+  &:focus-within > .modal__icon {
     fill: $lg-color;
   }
 }
-.backdrop__modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -115,14 +115,14 @@
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop__policy-label {
+.modal__policy-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.backdrop__checkbox {
+.modal__checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -133,12 +133,12 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-  &:checked + .backdrop__policy-icon {
+  &:checked + .modal__policy-icon {
     background-color: $lg-color;
     border: 2px solid $lg-color;
   }
 }
-.backdrop__policy-icon {
+.modal__policy-icon {
   display: flex;
   align-items: center;
   width: 18px;
@@ -149,7 +149,7 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop__policy-content {
+.modal__policy-content {
   font-size: 14px;
   line-height: 1.71;
   margin: 0px;
@@ -157,12 +157,12 @@
   letter-spacing: 0.03em;
   color: $content-color;
 }
-.backdrop__policy-link {
+.modal__policy-link {
   text-decoration-line: underline;
   color: $lg-color;
 }
 
-.backdrop__modal-button {
+.modal__button {
   display: block;
   margin: auto;
   font-family: inherit;
